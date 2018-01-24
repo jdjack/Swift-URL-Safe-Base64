@@ -1,9 +1,7 @@
 //
 //  Base64FS.swift
-//  Knox
 //
 //  Created by Jack Chorley on 27/06/2017.
-//  Copyright © 2017 iZolo Ltd. All rights reserved.
 //
 
 import Foundation
