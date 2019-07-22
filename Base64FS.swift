@@ -236,9 +236,7 @@ public class Base64FS {
             if l3 != 0 {
                 result.append(l2)
                 result.append(l3)
-            }
-            
-            if l2 != 0, l3 == 0 {
+            } else if l2 != 0 {
                 result.append(l2)
             }
         }
