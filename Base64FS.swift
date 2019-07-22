@@ -230,19 +230,17 @@ public class Base64FS {
             let l2 = ((second & 0b1111) << 4) | ((third & 0b111100) >> 2)
             let l3 = ((third & 0b11) << 6) | forth
             
-            
-            
             // Return the letters if they arent empty
             result.append(l1)
             
-            if l2 != 0 {
-                result.append(l2)
-            }
-            
             if l3 != 0 {
+                result.append(l2)
                 result.append(l3)
             }
             
+            if l2 != 0, l3 == 0 {
+                result.append(l2)
+            }
         }
         
         return result
