@@ -20,6 +20,12 @@ let dataInCorrectFormat = [UInt8](data)
 let encodedData = Base64FS.encode(data: dataInCorrectFormat)
 ```
 
+```swift
+let data: Data = ...
+let dataInCorrectFormat = [UInt8](data)
+let encodedString = Base64FS.encode(data: dataInCorrectFormat)
+```
+
 ## Encoding Strings
 
 For common use cases with filenames and URLs, you can use a string method directly as shown:
